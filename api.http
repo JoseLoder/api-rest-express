@@ -1,8 +1,29 @@
 ### Get all movies
-http://localhost:1234/movies
+GET http://localhost:1234/movies
 
 ### Get a movie by id
-http://localhost:1234/movies/b6e03689-cccd-478e-8565-d92f40813b13
+GET http://localhost:1234/movies/b6e03689-cccd-478e-8565-d92f40813b13
 
 ### Get all movies by genre
-http://localhost:1234/movies?genre=Action
+GET http://localhost:1234/movies?genre=Action
+
+### Post a movie
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+{
+    "title": "The GodFather",
+    "year": 1975,
+    "director": "Francis Ford Coppola",
+    "duration": 175, 
+    "poster": "https://img.fruugo.com/product/6/63/19136636_max.jpg",
+    "genre": ["Crime", "Drama"]
+}
+
+### Update a movie
+PATCH http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+{
+  "year": 2003
+}
