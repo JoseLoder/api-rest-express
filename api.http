@@ -1,2 +1,8 @@
-### First route - method GET
-http://localhost:1234/
+### Get all movies
+http://localhost:1234/movies
+
+### Get a movie by id
+http://localhost:1234/movies/b6e03689-cccd-478e-8565-d92f40813b13
+
+### Get all movies by genre
+http://localhost:1234/movies?genre=Action
